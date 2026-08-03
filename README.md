@@ -1,6 +1,6 @@
 # Synergy Systems — Developer Portal
 
-Public website for the Synergy Systems API. Built with GitHub Pages (free).
+Public website for the Synergy Systems API. Built with GitHub Pages.
 
 ## What this repository contains
 
