@@ -48,7 +48,7 @@ docs/
 Public URL:
 
 ```
-https://guiminoti.github.io/synergy-systems-api-site/
+https://guiminoti.github.io/Synergy-Systems-API/
 ```
 
 Future custom domain (no restructuring needed):
