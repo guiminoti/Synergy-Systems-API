@@ -1,34 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <defs>
-    <linearGradient id="water" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#6EDBFA"/>
-      <stop offset="100%" stop-color="#B6A2FF"/>
-    </linearGradient>
-    <radialGradient id="drop" cx="50%" cy="35%" r="60%">
-      <stop offset="0%" stop-color="#C1F299"/>
-      <stop offset="60%" stop-color="#6EDBFA"/>
-      <stop offset="100%" stop-color="#02817D"/>
-    </radialGradient>
-  </defs>
-
-  <!-- Background -->
-  <rect width="128" height="128" rx="28" fill="#0A1628"/>
-
-  <!-- Vibration rings (aquatic ripples) -->
-  <circle cx="64" cy="66" r="46" fill="none" stroke="#6EDBFA" stroke-width="3" opacity="0.25"/>
-  <circle cx="64" cy="66" r="36" fill="none" stroke="#B6A2FF" stroke-width="3" opacity="0.35"/>
-  <circle cx="64" cy="66" r="26" fill="none" stroke="#FFA5E4" stroke-width="3" opacity="0.4"/>
-
-  <!-- Water drop (core) -->
-  <path d="M64 36 C72 46 78 54 78 64 C78 73 71 80 64 80 C57 80 50 73 50 64 C50 54 56 46 64 36 Z"
-        fill="url(#drop)"/>
-
-  <!-- Highlight -->
-  <ellipse cx="58" cy="58" rx="6" ry="8" fill="#ffffff" opacity="0.5"/>
-
-  <!-- Vibrant accents -->
-  <circle cx="30" cy="96" r="4" fill="#FDD150"/>
-  <circle cx="98" cy="96" r="4" fill="#C1F299"/>
-  <circle cx="22" cy="40" r="3" fill="#FFA5E4"/>
-  <circle cx="106" cy="40" r="3" fill="#FDD150"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Stylized "S" mark — Synergy Systems (monochrome, aquatic vibration) -->
+  <g fill="none" stroke="#111111" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- S path: top curve -> diagonal -> middle -> diagonal -> bottom curve -->
+    <path d="M78 82
+             C78 66 90 56 106 56
+             C126 56 132 70 124 84
+             L92 124
+             C80 142 86 160 108 164
+             C128 168 140 156 136 142"
+          fill="none" stroke="#111111"/>
+  </g>
+  <!-- Vibration accents (subtle, aquatic) -->
+  <circle cx="196" cy="60" r="7" fill="#02817D"/>
+  <circle cx="60" cy="196" r="7" fill="#02817D"/>
+  <circle cx="196" cy="196" r="5" fill="#02817D" opacity="0.55"/>
+  <circle cx="60" cy="60" r="5" fill="#02817D" opacity="0.55"/>
 </svg>
