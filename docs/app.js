@@ -20,7 +20,7 @@
   var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!prefersReduced && 'IntersectionObserver' in window) {
     var revealEls = document.querySelectorAll(
-      '.feature, .doc-card, .endpoint, .code-block, .price-card, .timeline__item'
+      '.feature, .doc-card, .endpoint, .code-block, .price-card'
     );
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
