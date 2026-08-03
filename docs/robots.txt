@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guiminoti.github.io/synergy-systems-api-site/sitemap.xml

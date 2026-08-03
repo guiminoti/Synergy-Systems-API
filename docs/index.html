@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synergy Systems — Developer Portal</title>
+
+  <!-- Primary SEO -->
+  <meta name="description" content="Synergy Systems Developer Portal — a public API for explainable scientific knowledge: discovery, explanations, evidence synthesis, recommendation and product enrichment. Built for researchers, developers and AI applications." />
+  <meta name="keywords" content="scientific API, explainable AI, knowledge API, evidence synthesis, nutrition data API, developer portal, machine learning API" />
+  <meta name="author" content="Guilherme Minoti" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://guiminoti.github.io/synergy-systems-api-site/" />
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Synergy Systems — Developer Portal" />
+  <meta property="og:description" content="A public API for explainable scientific knowledge — discovery, explanations, evidence synthesis, recommendation and product enrichment." />
+  <meta property="og:url" content="https://guiminoti.github.io/synergy-systems-api-site/" />
+  <meta property="og:site_name" content="Synergy Systems Developer Portal" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Synergy Systems — Developer Portal" />
+  <meta name="twitter:description" content="A public API for explainable scientific knowledge." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════ NAV ═══════════════════ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top">
+        <svg class="nav__mark" width="24" height="24" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="26" fill="none" stroke="#02817D" stroke-width="5"/>
+          <circle cx="32" cy="15" r="5" fill="#02817D"/>
+          <circle cx="32" cy="49" r="5" fill="#02817D"/>
+        </svg>
+        <span class="nav__name">Synergy Systems</span>
+        <span class="nav__tag">Developer Portal</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#docs">Documentation</a>
+        <a href="#endpoints">Endpoints</a>
+        <a href="#examples">Examples</a>
+        <a href="#plans">Plans</a>
+        <a href="#faq">FAQ</a>
+        <a href="#roadmap">Roadmap</a>
+      </nav>
+      <a class="nav__cta" href="#contact">
+        Get Started
+        <svg width="14" height="14" viewBox="0 0 37 18" fill="none" aria-hidden="true"><path d="M28.7208 1L36 9M36 9L28.7208 17M36 9H0" stroke="currentColor"/></svg>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ═══════════════════ HERO ═══════════════════ -->
+    <section class="hero">
+      <div class="hero__inner">
+        <p class="hero__eyebrow">Public API · Developer Portal</p>
+        <h1 class="hero__title">Explainable scientific knowledge for your application</h1>
+        <p class="hero__body">
+          Synergy Systems is a public API that serves validated scientific knowledge
+          with explanation, provenance and confidence — ready to power nutrition apps,
+          research tools, health products and AI agents.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#endpoints">Explore the API</a>
+          <a class="btn btn--ghost" href="#docs">Read the docs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ WHAT ═══════════════════ -->
+    <section class="section" id="what">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__num">01</span>
+          <h2 class="section__title">What is the Synergy Systems API?</h2>
+        </div>
+        <p class="section__lead">
+          A REST API that answers scientific questions with evidence. Every response
+          includes the reasoning behind it — so your application can show <em>why</em>,
+          not just <em>what</em>.
+        </p>
+        <div class="feature-grid">
+          <div class="feature">
+            <h3>Discovery</h3>
+            <p>Search foods, compounds, mechanisms, biomarkers and conditions in one query.</p>
+          </div>
+          <div class="feature">
+            <h3>Explanations</h3>
+            <p>Every answer includes a human-readable biological explanation.</p>
+          </div>
+          <div class="feature">
+            <h3>Evidence synthesis</h3>
+            <p>Aggregated evidence with consensus, limitations and gaps.</p>
+          </div>
+          <div class="feature">
+            <h3>Recommendations</h3>
+            <p>Evidence-gated suggestions with full rationale.</p>
+          </div>
+          <div class="feature">
+            <h3>Product enrichment</h3>
+            <p>Send a product name — receive its nutritional and scientific profile.</p>
+          </div>
+          <div class="feature">
+            <h3>Provenance</h3>
+            <p>Every claim carries its source, version and verification status.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ DOCS ═══════════════════ -->
+    <section class="section section--alt" id="docs">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__num">02</span>
+          <h2 class="section__title">Getting started</h2>
+        </div>
+        <div class="docs-grid">
+          <div class="doc-card">
+            <span class="doc-step">01</span>
+            <h3>Get an API key</h3>
+            <p>Sign up for the Free plan and receive a key. No credit card required.</p>
+          </div>
+          <div class="doc-card">
+            <span class="doc-step">02</span>
+            <h3>Make your first request</h3>
+            <pre><code>GET /v1/discovery/search?q=spinach
+Authorization: Bearer YOUR_KEY</code></pre>
+          </div>
+          <div class="doc-card">
+            <span class="doc-step">03</span>
+            <h3>Read the response</h3>
+            <p>Every response includes evidence, confidence and provenance — nothing hidden.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ ENDPOINTS ═══════════════════ -->
+    <section class="section" id="endpoints">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__num">03</span>
+          <h2 class="section__title">Public endpoints</h2>
+        </div>
+        <div class="endpoint-list">
+          <div class="endpoint">
+            <span class="endpoint__method">GET</span>
+            <code class="endpoint__path">/v1/discovery/search</code>
+            <p class="endpoint__desc">Search across foods, compounds, mechanisms, biomarkers and conditions.</p>
+          </div>
+          <div class="endpoint">
+            <span class="endpoint__method">GET</span>
+            <code class="endpoint__path">/v1/explain/{domain}/{iri}</code>
+            <p class="endpoint__desc">Get a human-readable scientific explanation for any entity.</p>
+          </div>
+          <div class="endpoint">
+            <span class="endpoint__method">GET</span>
+            <code class="endpoint__path">/v1/synthesize/{domain}/{iri}</code>
+            <p class="endpoint__desc">Aggregated evidence with consensus, limitations and gaps.</p>
+          </div>
+          <div class="endpoint">
+            <span class="endpoint__method">GET</span>
+            <code class="endpoint__path">/v1/recommend/{domain}/{iri}</code>
+            <p class="endpoint__desc">Evidence-gated recommendation with full rationale.</p>
+          </div>
+          <div class="endpoint">
+            <span class="endpoint__method">POST</span>
+            <code class="endpoint__path">/v1/products/enrich</code>
+            <p class="endpoint__desc">Send a product title — receive its nutritional and scientific profile.</p>
+          </div>
+          <div class="endpoint">
+            <span class="endpoint__method">GET</span>
+            <code class="endpoint__path">/v1/foods/{id}/model</code>
+            <p class="endpoint__desc">Full Digital Food Model for a food.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ EXAMPLES ═══════════════════ -->
+    <section class="section section--alt" id="examples">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__num">04</span>
+          <h2 class="section__title">Code examples</h2>
+        </div>
+        <div class="code-grid">
+          <div class="code-block">
+            <div class="code-block__head">cURL</div>
+            <pre><code>curl -X GET \
+  "https://api.synergysystems.ai/v1/discovery/search?q=nrf2" \
+  -H "Authorization: Bearer YOUR_KEY"</code></pre>
+          </div>
+          <div class="code-block">
+            <div class="code-block__head">Python</div>
+            <pre><code>from synergy import SynergyClient
+
+client = SynergyClient(api_key="YOUR_KEY")
+
+result = client.discovery.search("spinach")
+print(result["items"][0]["name"])</code></pre>
+          </div>
+          <div class="code-block">
+            <div class="code-block__head">JavaScript</div>
+            <pre><code>import { SynergyClient } from "synergy-systems";
+
+const client = new SynergyClient({ apiKey: "YOUR_KEY" });
+
+const res = await client.products.enrich(
+  "Salada de frutas fresca"
+);
+console.log(res.data.status);</code></pre>
+          </div>
+          <div class="code-block">
+            <div class="code-block__head">Example response</div>
+            <pre><code>{
+  "success": true,
+  "data": { "items": [...] },
+  "provenance": { "version": "1.9.0" },
+  "evidence_level": "curated",
+  "confidence": 0.95,
+  "api_version": "v1.1"
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ PLANS ═══════════════════ -->
+    <section class="section" id="plans">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__num">05</span>
+          <h2 class="section__title">Plans</h2>
+        </div>
+        <p class="section__lead">
+          Free for research, students and personal projects. Paid plans exist only to
+          sustain infrastructure for intensive or professional use.
+        </p>
+        <div class="price-grid">
+          <article class="price-card price-card--featured">
+            <h3>Free</h3>
+            <p class="price">$0</p>
+            <p class="price__note">Students, research, prototypes, personal projects. Free within reasonable infrastructure limits.</p>
+          </article>
+          <article class="price-card">
+            <h3>Professional</h3>
+            <p class="price">Coming Soon</p>
+            <p class="price__note">Commercial applications, high volume, SLA, higher throughput.</p>
+          </article>
+          <article class="price-card">
+            <h3>Enterprise</h3>
+            <p class="price">Custom</p>
+            <p class="price__note">Dedicated solutions, custom integration, support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ FAQ ═══════════════════ -->
+    <section class="section section--alt" id="faq">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__num">06</span>
+          <h2 class="section__title">FAQ</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq">
+            <summary>Is the API free?</summary>
+            <p>Yes. The Free plan is available for students, researchers, prototypes and personal projects — no credit card required.</p>
+          </details>
+          <details class="faq">
+            <summary>Is the scientific knowledge verified?</summary>
+            <p>Yes. Evidence passes through verification gates, and DOIs are audited. Unsupported claims are never returned as established.</p>
+          </details>
+          <details class="faq">
+            <summary>Can I use the API in a commercial app?</summary>
+            <p>Yes — the Professional plan (coming soon) is designed for commercial applications with volume and SLA needs.</p>
+          </details>
+          <details class="faq">
+            <summary>Does every response include an explanation?</summary>
+            <p>Yes. Every scientific answer includes its reasoning chain, evidence and confidence — no black boxes.</p>
+          </details>
+          <details class="faq">
+            <summary>What is the uptime guarantee?</summary>
+            <p>The Free plan is best-effort. Professional and Enterprise plans will include SLAs.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ ROADMAP ═══════════════════ -->
+    <section class="section" id="roadmap">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__num">07</span>
+          <h2 class="section__title">Public roadmap</h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline__item"><span class="dot"></span><div><strong>API v1.1</strong><p>Current — discovery, explanation, synthesis, recommendation, enrich</p></div></li>
+          <li class="timeline__item"><span class="dot"></span><div><strong>API v1.2</strong><p>Health domain · pagination · webhooks</p></div></li>
+          <li class="timeline__item"><span class="dot"></span><div><strong>Professional plan</strong><p>Commercial access, SLA, higher throughput</p></div></li>
+          <li class="timeline__item"><span class="dot"></span><div><strong>GraphQL</strong><p>Flexible queries over the knowledge graph</p></div></li>
+          <li class="timeline__item"><span class="dot"></span><div><strong>Personal domain</strong><p>Individual context — always free</p></div></li>
+          <li class="timeline__item"><span class="dot"></span><div><strong>Custom domain</strong><p>api.synergysystems.ai or developer.synergysystems.ai</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ CONTACT ═══════════════════ -->
+    <section class="section section--alt" id="contact">
+      <div class="section__inner section__inner--center">
+        <div class="section__head section__head--center">
+          <span class="section__num">08</span>
+          <h2 class="section__title">Get in touch</h2>
+        </div>
+        <p class="section__lead section__lead--center">
+          Built by Guilherme Minoti. Questions, feedback or partnership ideas — reach out.
+        </p>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:guilherme.minoti@gmail.com">Email</a>
+          <a class="btn btn--ghost" href="https://wa.me/5562998455202" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <p class="contact__fine">Prefer a form? Use GitHub Discussions on the repository.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__brand">Synergy Systems</p>
+      <p class="footer__tag">Developer Portal — Explainable scientific knowledge for applications.</p>
+      <p class="footer__copy">© <span id="year"></span> Synergy Systems · Built by Guilherme Minoti</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
