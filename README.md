@@ -38,26 +38,12 @@ docs/
     └── (images, icons, logo — future)
 ```
 
-## GitHub Pages (free)
-
-1. Repository **Settings** → **Pages**
-2. **Build and deployment** → Source: **Deploy from a branch**
-3. **Branch:** `main` · **Folder:** `/docs`
-4. Save
-
 Public URL:
 
 ```
 https://guiminoti.github.io/Synergy-Systems-API/
 ```
 
-Future custom domain (no restructuring needed):
-
-```
-api.synergysystems.ai
-# or
-developer.synergysystems.ai
-```
 
 ## Author
 
