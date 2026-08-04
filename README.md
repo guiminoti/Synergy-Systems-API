@@ -11,7 +11,7 @@ Public website for the Synergy Systems API. Built with GitHub Pages.
 - Endpoints, plans, FAQ and roadmap
 - Contact information
 
-This repository is a pure developer portal — presentation and public API docs only.
+This repository is a pure developer portal — presentation and public API docs.
 
 ## Structure
 
