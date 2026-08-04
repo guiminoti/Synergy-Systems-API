@@ -11,17 +11,7 @@ Public website for the Synergy Systems API. Built with GitHub Pages.
 - Endpoints, plans, FAQ and roadmap
 - Contact information
 
-**This repository NEVER contains:**
-
-- Datasets or knowledge graphs
-- HARNESS or Synergy Systems source code
-- Internal algorithms, Discovery Providers or pipelines
-- Recommendation engine internals
-- FSS internal mechanisms
-- Proprietary scientific architecture
-
-The scientific platform remains private. This repository is a pure
-**developer portal** — presentation and public API docs only.
+This repository is a pure developer portal — presentation and public API docs only.
 
 ## Structure
 
