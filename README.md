@@ -39,7 +39,7 @@ The first scientific domain ready for production and use is the **Food Synergy S
 The same platform is being expanded to support additional interoperable scientific domains, including:
 
 * Health Synergy System (HSS)
-* And others *
+* And others
 
 Each new domain automatically benefits from the platform's reusable scientific capabilities, including Discovery, Explanation Engine, Evidence Synthesizer, Contradiction Explorer, Recommendation Engine, Evidence Audit, and Knowledge Provenance.
 
