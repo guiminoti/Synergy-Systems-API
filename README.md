@@ -48,7 +48,7 @@ The Synergy Systems API was created not only to answer scientific questions, but
 
 Whether powering a nutrition platform, a clinical decision support system, a scientific assistant, or an autonomous AI agent, Synergy Systems provides a trusted, explainable, and continuously evolving scientific foundation.
 
-**Synergy Systems is not simply an API. It is an powerful and extensible scientific intelligence infrastructure for the next generation of evidence-based applications.**
+**Synergy Systems is not simply an API. It is a powerful and extensible scientific intelligence infrastructure for the next generation of applications based on traceable evidence.**
 
 
 ## What this repository contains
