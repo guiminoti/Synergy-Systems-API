@@ -53,7 +53,7 @@ Whether powering a nutrition platform, a clinical decision support system, a sci
 
 ## What this repository contains
 
-**Only public, institutional content:**
+**Public and institutional content:**
 
 - HTML / CSS / JavaScript (static site)
 - Public API documentation and examples
@@ -86,5 +86,5 @@ https://guiminoti.github.io/Synergy-Systems-API/
 
 ## Author
 
-Created by **Guilherme Minoti**. 
+Created by **Guilherme Minoti** 
 — email & WhatsApp on the site
