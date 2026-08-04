@@ -53,7 +53,7 @@ body {
 /* ── HERO ────────────────────────────────────────── */
 .hero__inner { max-width: var(--maxw); margin: 0 auto; padding: 110px 24px 80px; }
 .hero__eyebrow { display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-bottom: 20px; }
-.nav__tag--brand { background: #FFD8E5; color: #CA7CAF; }
+.nav__tag--brand { background: #FFD8E5; color: #BD5F83; }
 .hero__title { font-size: clamp(40px, 6vw, 68px); font-weight: 900; text-transform: uppercase; letter-spacing: -.01em; line-height: 1.05; max-width: 880px; margin-bottom: 28px; }
 .hero__body { max-width: 620px; color: var(--ink-soft); font-size: 18px; margin-bottom: 40px; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 14px; }
