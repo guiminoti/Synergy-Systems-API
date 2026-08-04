@@ -4,7 +4,6 @@
 
 Rather than acting as a traditional data repository, Synergy Systems integrates curated scientific evidence, biological mechanisms, nutritional composition, ontology mappings, biomarkers, health conditions, molecular interactions, and explainable reasoning into a unified knowledge graph that can be consumed by applications, AI systems, researchers, and healthcare technologies.
 
-Every response is built upon transparent scientific provenance, DOI-verified evidence, and reproducible reasoning pipelines. Instead of returning isolated facts, the API explains *why* an answer is supported, *how* biological mechanisms interact, *which* evidence supports each conclusion, and *where* scientific uncertainty still exists.
 
 ## Core Principles
 
