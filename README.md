@@ -17,7 +17,7 @@ Every response is built upon transparent scientific provenance, DOI-verified evi
 
 ## Current Domain
 
-The first production-ready scientific domain is the **Food Synergy System (FSS)**, providing:
+The first scientific domain ready for production and use is the **Food Synergy System (FSS)**, providing:
 
 * Comprehensive nutritional composition.
 * Digital Food Models.
