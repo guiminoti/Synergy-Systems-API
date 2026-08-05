@@ -106,7 +106,7 @@ body {
   flex-direction: column;
   gap: 12px;
   padding: 18px;
-  background: radial-gradient(1100px 360px at 85% -12%, rgba(255,216,229,.30), transparent 62%), #fff;
+  background: #fff;
   scroll-behavior: smooth;
 }
 .chat__body::-webkit-scrollbar { width: 8px; }
