@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile — Synergy Systems Developer Portal</title>
+
+  <!-- Primary SEO -->
+  <meta name="description" content="Your Synergy Systems developer profile — account details, plan and API usage." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://guiminoti.github.io/Synergy-Systems-API/profile.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-synergy-systems.png" />
+  <link rel="apple-touch-icon" href="assets/favicon/favicon-synergy-systems.png" />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=3" />
+</head>
+<body class="page-profile">
+
+  <!-- ═══════════════════ NAV ═══════════════════ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html">
+        <img class="nav__mark" src="assets/favicon/favicon-synergy-systems.png" width="26" height="26" alt="Synergy Systems"/>
+        <span class="nav__name">Synergy Systems</span>
+      </a>
+      <div class="nav__auth" id="navAuth"></div>
+      <a class="nav__cta" href="index.html#contact">
+        Get the API
+        <svg width="14" height="14" viewBox="0 0 37 18" fill="none" aria-hidden="true"><path d="M28.7208 1L36 9M36 9L28.7208 17M36 9H0" stroke="currentColor"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ═══════════════════ PROFILE ═══════════════════ -->
+    <section class="profile-section">
+      <div class="profile-section__inner" id="profileView" role="region" aria-label="User profile">
+        <!-- rendered by auth.js -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__brand"><strong>Synergy Systems</strong></p>
+      <p class="footer__tag">Developer Portal — Explainable scientific knowledge for applications.</p>
+      <p class="footer__copy">© <span id="year"></span> Synergy Systems · Built by Guilherme Minoti</p>
+    </div>
+  </footer>
+
+  <script src="auth.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      var year = document.getElementById('year');
+      if (year) year.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
