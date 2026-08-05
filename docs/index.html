@@ -55,23 +55,63 @@
 
     <!-- ═══════════════════ HERO ═══════════════════ -->
     <section class="hero">
-      <div class="hero__inner">
-        <p class="hero__eyebrow">
-          <span class="hero__eyebrow-label">Synergy Systems API</span>
-          <span class="hero__pills">
-            <span class="nav__tag nav__tag--brand">Public API</span>
-            <span class="nav__tag">Developer Portal</span>
-          </span>
-        </p>
-        <h1 class="hero__title">EXPLAINABLE SCIENTIFIC KNOWLEDGE FOR YOUR APPLICATION</h1>
-        <p class="hero__body">
-          <strong>Synergy Systems</strong> is a public API that serves validated scientific knowledge
-          with explanation, provenance and confidence — ready to power nutrition apps,
-          research tools, health products and AI agents.
-        </p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#endpoints">Explore the API</a>
-          <a class="btn btn--ghost" href="#docs">Read the docs</a>
+      <div class="hero__inner hero__grid">
+        <div class="hero__content">
+          <p class="hero__eyebrow">
+            <span class="hero__eyebrow-label">Synergy Systems API</span>
+            <span class="hero__pills">
+              <span class="nav__tag nav__tag--brand">Public API</span>
+              <span class="nav__tag">Developer Portal</span>
+            </span>
+          </p>
+          <h1 class="hero__title">EXPLAINABLE SCIENTIFIC KNOWLEDGE FOR YOUR APPLICATION</h1>
+          <p class="hero__body">
+            <strong>Synergy Systems</strong> is a public API that serves validated scientific knowledge
+            with explanation, provenance and confidence — ready to power nutrition apps,
+            research tools, health products and AI agents.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#endpoints">Explore the API</a>
+            <a class="btn btn--ghost" href="#docs">Read the docs</a>
+          </div>
+        </div>
+
+        <!-- ═══ HERO CHAT DEMO ═══ -->
+        <div class="chat" id="chat" role="region" aria-label="API demo chat">
+          <div class="chat__head">
+            <img class="chat__mark" src="assets/favicon/favicon-synergy-systems.png" width="20" height="20" alt="" />
+            <span class="chat__title">API Demo</span>
+            <span class="chat__status"><span class="chat__status-dot"></span>live</span>
+          </div>
+
+          <div class="chat__body" id="chatBody" role="log" aria-live="polite">
+            <div class="chat__msg chat__msg--assistant">
+              <p class="chat__reply-kind">Assistant</p>
+              <p>Hi! I'm connected to the <strong>Synergy Systems</strong> knowledge base.
+              Ask me about foods, compounds, mechanisms or conditions — or try one of the prompts below.</p>
+            </div>
+            <div class="chat__typing" id="chatTyping" hidden aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+
+          <div class="chat__chips" id="chatChips">
+            <button class="chat__chip" type="button" data-q="What are the benefits of spinach?">Benefits of spinach</button>
+            <button class="chat__chip" type="button" data-q="Explain vitamin D">Explain vitamin D</button>
+            <button class="chat__chip" type="button" data-q="Recommend foods for inflammation">Foods for inflammation</button>
+            <button class="chat__chip" type="button" data-q="Enrich this product: fresh fruit salad">Enrich a product</button>
+          </div>
+
+          <form class="chat__form" id="chatForm" autocomplete="off">
+            <input class="chat__input" id="chatInput" type="text"
+                   placeholder="Ask the knowledge base…" aria-label="Ask the knowledge base" />
+            <button class="chat__send" type="submit" aria-label="Send">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 19V5M12 5L6 11M12 5L18 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </form>
+
+          <p class="chat__note">Simulated preview — nothing leaves your browser.
+            <a href="#endpoints">See the real endpoints →</a></p>
         </div>
       </div>
     </section>
