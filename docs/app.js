@@ -179,6 +179,35 @@
       chatInput.focus();
     });
 
+    var chatEl = document.getElementById('chat');
+    var chatExpand = document.getElementById('chatExpand');
+
+    function setExpanded(expanded) {
+      if (expanded) {
+        chatEl.classList.add('chat--expanded');
+        document.body.classList.add('chat-open');
+      } else {
+        chatEl.classList.remove('chat--expanded');
+        document.body.classList.remove('chat-open');
+      }
+      chatExpand.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      chatExpand.setAttribute('aria-label', expanded ? 'Restore chat' : 'Expand chat');
+      chatExpand.setAttribute('title', expanded ? 'Restore chat' : 'Expand chat');
+      window.setTimeout(scrollChat, 80);
+    }
+
+    if (chatEl && chatExpand) {
+      chatExpand.addEventListener('click', function () {
+        setExpanded(!chatEl.classList.contains('chat--expanded'));
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && chatEl.classList.contains('chat--expanded')) {
+          setExpanded(false);
+          chatExpand.focus();
+        }
+      });
+    }
+
     if (chatChips) {
       chatChips.addEventListener('click', function (e) {
         var chip = e.target.closest ? e.target.closest('.chat__chip') : null;
