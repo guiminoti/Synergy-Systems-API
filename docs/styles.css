@@ -96,7 +96,7 @@ body {
 }
 .chat__expand:hover { background: var(--accent); transform: scale(1.06); }
 .chat__expand:active { transform: scale(.96); }
-.chat__expand svg { display: block; }
+.chat__expand-icon--open { display: block; }
 .chat__expand-icon--close { display: none; }
 
 .chat__body {
