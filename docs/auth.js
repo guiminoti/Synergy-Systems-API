@@ -282,7 +282,9 @@
         '  <span class="nav__user-name">' + esc(user.name) + '</span>' +
         '</a>';
     } else {
-      el.innerHTML = '<button class="nav__signin" type="button" id="authSignInBtn">Sign in</button>';
+      el.innerHTML = '<button class="nav__signin" type="button" id="authSignInBtn">Sign in' +
+        '<svg width="14" height="14" viewBox="0 0 37 18" fill="none" aria-hidden="true"><path d="M28.7208 1L36 9M36 9L28.7208 17M36 9H0" stroke="currentColor"/></svg>' +
+        '</button>';
       document.getElementById('authSignInBtn').addEventListener('click', openModal);
     }
   }
