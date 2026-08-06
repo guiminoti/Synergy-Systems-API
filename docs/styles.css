@@ -52,7 +52,7 @@ body {
 
 /* ── HERO ────────────────────────────────────────── */
 .hero__inner { max-width: var(--maxw); margin: 0 auto; padding: 50px 24px 80px; }
-.hero__grid { display: grid; grid-template-columns: calc(54% - 70px) calc(46% + 14px); gap: 56px; align-items: center; }
+.hero__grid { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 56px; align-items: center; }
 .hero__grid .hero__title { font-size: clamp(34px, 4.4vw, 54px); }
 
 /* ── HERO CHAT DEMO ──────────────────────────────── */
