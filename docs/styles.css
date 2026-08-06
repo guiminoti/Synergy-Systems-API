@@ -51,7 +51,7 @@ body {
 .nav__cta:hover svg { transform: translateX(3px); }
 
 /* ── HERO ────────────────────────────────────────── */
-.hero__inner { max-width: var(--maxw); margin: 0 auto; padding: 80px 24px 80px; }
+.hero__inner { max-width: var(--maxw); margin: 0 auto; padding: 60px 24px 80px; }
 .hero__grid { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 56px; align-items: center; }
 .hero__grid .hero__title { font-size: clamp(34px, 4.4vw, 54px); }
 
@@ -547,7 +547,7 @@ body.auth-open { overflow: hidden; }
 /* ── PROFILE PAGE ───────────────────────────────── */
 .profile-section { min-height: calc(100vh - 64px - 190px); }
 .profile-section__inner { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
-.profile { padding: 56px 0 40px; }
+.profile { padding: 60px 0 40px; }
 .profile__head { display: flex; flex-direction: column; align-items: center; text-align: center; }
 .profile__avatar {
   width: 92px;
@@ -616,13 +616,13 @@ body.auth-open { overflow: hidden; }
 }
 @media (max-width: 640px) {
   .feature-grid, .docs-grid, .price-grid { grid-template-columns: 1fr; }
-  .hero__inner { padding: 56px 20px 56px; }
+  .hero__inner { padding: 60px 20px 56px; }
   .section { padding: 60px 0; }
   .hero__actions { flex-direction: column; }
   .btn { justify-content: center; }
   .chat { height: 460px; }
   .profile__grid { grid-template-columns: 1fr; }
-  .profile { padding: 40px 0 32px; }
+  .profile { padding: 60px 0 32px; }
   .nav__user-name { max-width: 110px; }
 }
 
