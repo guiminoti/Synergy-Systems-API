@@ -117,7 +117,7 @@
   }
 
   /* ── modal ───────────────────────────────────────── */
-  var modal, stage, providersEl;
+  var modal, stage, providersEl, authMode = 'signup';
 
   function modalHTML() {
     return (
@@ -126,14 +126,14 @@
       '  <div class="auth-modal__card" role="dialog" aria-modal="true" aria-labelledby="authTitle">' +
       '    <button class="auth-modal__close" data-auth-close aria-label="Close" type="button">&times;</button>' +
       '    <img class="auth-modal__mark" src="assets/favicon/favicon-synergy-systems.png" width="34" height="34" alt="Synergy Systems"/>' +
-      '    <h2 id="authTitle">Sign in</h2>' +
-      '    <p class="auth-modal__sub">Continue to the Synergy Systems developer portal.</p>' +
+      '    <h2 id="authTitle">Get started</h2>' +
+      '    <p class="auth-modal__sub" id="authSub">Create your free account and continue to the Synergy Systems developer portal.</p>' +
       '    <div class="auth-providers" id="authProviders">' +
-      '      <button class="auth-provider" type="button" data-provider="google">' + LOGOS.google + 'Continue with Google</button>' +
-      '      <button class="auth-provider" type="button" data-provider="apple">' + LOGOS.apple + 'Continue with Apple</button>' +
-      '      <button class="auth-provider" type="button" data-provider="github">' + LOGOS.github + 'Continue with GitHub</button>' +
+      '      <button class="auth-provider" type="button" data-provider="google">' + LOGOS.google + '<span class="auth-provider__label" data-provider-name="Google">Continue with Google</span></button>' +
+      '      <button class="auth-provider" type="button" data-provider="apple">' + LOGOS.apple + '<span class="auth-provider__label" data-provider-name="Apple">Continue with Apple</span></button>' +
+      '      <button class="auth-provider" type="button" data-provider="github">' + LOGOS.github + '<span class="auth-provider__label" data-provider-name="GitHub">Continue with GitHub</span></button>' +
       '      <div class="auth-or"><span>or</span></div>' +
-      '      <button class="auth-provider" type="button" data-provider="email">' + LOGOS.email + 'Continue with email</button>' +
+      '      <button class="auth-provider" type="button" data-provider="email">' + LOGOS.email + '<span class="auth-provider__label" data-provider-name="Email">Continue with email</span></button>' +
       '    </div>' +
       '    <div class="auth-stage" id="authStage" hidden></div>' +
       '    <p class="auth-modal__note">Demo · simulated sign-in — no real account is created</p>' +
@@ -163,8 +163,18 @@
     });
   }
 
-  function openModal() {
+  function openModal(mode) {
     ensureModal();
+    authMode = (mode === 'login') ? 'login' : 'signup';
+    var login = authMode === 'login';
+    document.getElementById('authTitle').textContent = login ? 'Log in' : 'Get started';
+    document.getElementById('authSub').textContent = login
+      ? 'Welcome back to the Synergy Systems developer portal.'
+      : 'Create your free account and continue to the Synergy Systems developer portal.';
+    var verb = login ? 'Log in with' : 'Continue with';
+    providersEl.querySelectorAll('.auth-provider__label').forEach(function (lbl) {
+      lbl.textContent = verb + ' ' + lbl.getAttribute('data-provider-name');
+    });
     modal.hidden = false;
     stage.hidden = true;
     providersEl.hidden = false;
@@ -247,7 +257,7 @@
       '  <label for="authEmail">Email</label>' +
       '  <input id="authEmail" name="email" type="email" placeholder="you@example.com" value="' + esc(emailVal) + '" required/>' +
       '  <p class="auth-error" id="authError" hidden>Please enter a valid name and email.</p>' +
-      '  <button class="btn btn--primary" type="submit">Continue</button>' +
+      '  <button class="btn btn--primary" type="submit">' + (authMode === 'login' ? 'Log in' : 'Continue') + '</button>' +
       '</form>';
     var f = document.getElementById('authForm');
     f.addEventListener('submit', function (e) {
@@ -287,8 +297,8 @@
         '<button class="nav__signin" type="button" id="authSignInBtn">Get started for free' +
         '<svg width="14" height="14" viewBox="0 0 37 18" fill="none" aria-hidden="true"><path d="M28.7208 1L36 9M36 9L28.7208 17M36 9H0" stroke="currentColor"/></svg>' +
         '</button>';
-      document.getElementById('authLoginBtn').addEventListener('click', openModal);
-      document.getElementById('authSignInBtn').addEventListener('click', openModal);
+      document.getElementById('authLoginBtn').addEventListener('click', function () { openModal('login'); });
+      document.getElementById('authSignInBtn').addEventListener('click', function () { openModal('signup'); });
     }
   }
 
@@ -315,7 +325,7 @@
         '    <a class="btn btn--ghost" href="index.html">Back to portal</a>' +
         '  </div>' +
         '</div>';
-      document.getElementById('profileSignInBtn').addEventListener('click', openModal);
+      document.getElementById('profileSignInBtn').addEventListener('click', function () { openModal('login'); });
       return;
     }
     var p = PROVIDERS[user.provider] || { name: user.provider };
